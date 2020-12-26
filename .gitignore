@@ -6,7 +6,9 @@ node_modules/
 
 
 # local env files
+# 在所有的环境中被载入，但会被 git 忽略
 .env.local
+# 只在指定的模式中被载入，但会被 git 忽略
 .env.*.local
 
 # Log files
