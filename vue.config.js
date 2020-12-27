@@ -71,6 +71,8 @@ module.exports = {
       .oneOf('external')
       .use('file-loader')
       .loader('file-loader')
-      .options({ name: 'assets/svg/[name].[hash:8].[ext]' })
+      .options({
+        name: 'assets/svg/[name].[hash:8].[ext]',
+      })
   },
 }

@@ -11,8 +11,8 @@ module.exports = {
   extends: [
     'plugin:vue/strongly-recommended',
     'eslint:recommended',
+    // '@vue/prettier',
     'plugin:prettier/recommended',
-    'prettier/vue',
   ],
   rules: {
     'no-console': isProduction ? 'error' : 'warn',
