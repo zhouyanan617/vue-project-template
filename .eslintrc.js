@@ -1,4 +1,4 @@
-const isProduction = process.env.NODE_ENV === 'production'
+const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
   root: true, // 当前配置为根配置，将不再从上级文件夹查找配置
@@ -11,8 +11,8 @@ module.exports = {
   extends: [
     'plugin:vue/strongly-recommended',
     'eslint:recommended',
-    // '@vue/prettier',
-    'plugin:prettier/recommended',
+    '@vue/prettier',
+    // 'plugin:prettier/recommended',
   ],
   rules: {
     'no-console': isProduction ? 'error' : 'warn',
@@ -119,4 +119,4 @@ module.exports = {
     // 使用 . 而不是 []
     'dot-notation': 'error',
   },
-}
+};
